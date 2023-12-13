@@ -7288,9 +7288,9 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
     }
     else
     {
-        const struct TrainerMon *party = gTrainers[trainerId].party.TrainerMon;
+        const struct TrainerMon *party = gTrainers[trainerId].party;
         lastMonLevel = party[gTrainers[trainerId].partySize - 1].lvl;
- 
+
         for (; gTrainerMoneyTable[i].classId != 0xFF; i++)
         {
             if (gTrainerMoneyTable[i].classId == gTrainers[trainerId].trainerClass)
