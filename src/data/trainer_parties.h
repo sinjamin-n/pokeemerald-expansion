@@ -4089,6 +4089,14 @@ static const struct TrainerMon sParty_Calvin1[] = {
     .species = SPECIES_POOCHYENA,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_BITE, MOVE_PURSUIT, MOVE_QUICK_ATTACK, MOVE_LEER}
+    }
+};
+
+static const struct TrainerMon sParty_Billy[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_ZIGZAGOON,
     },
     {
     .ivs = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -4099,7 +4107,7 @@ static const struct TrainerMon sParty_Calvin1[] = {
     }
 };
 
-static const struct TrainerMon sParty_Billy[] = {
+static const struct TrainerMon sParty_Josh[] = {
     {
   .ivs = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 7,
@@ -7898,9 +7906,9 @@ static const struct TrainerMon sParty_Kent[] = {
 };
 
 static const struct TrainerMon sParty_James1[] = {
-  {
-        .ivs = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 11,
+    {
+    .iv = 0,
+    .lvl = 6,
     .species = SPECIES_NINCADA,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_MUD_SLAP, MOVE_REST, MOVE_SNORE, MOVE_LEECH_LIFE}
